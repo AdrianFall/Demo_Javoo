@@ -1,29 +1,24 @@
 package com.example.demo_javoo;
 
-import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
-import com.example.demo_javoo.helper.ImageHelper;
-
-import android.app.Activity;
 import android.app.ActionBar;
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
+import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 
 public class MainActivity extends Activity implements ActionBar.TabListener {
@@ -191,6 +186,37 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_medical_card, container, false);
             
+            // Populate grandson view list
+            List<String> grandsonPhoneList = new ArrayList<String>();
+            grandsonPhoneList.add("+44 (0) 79922 101356");
+            grandsonPhoneList.add("+44 (0) 20 4144 8294");
+            
+            ListView grandsonViewList = (ListView) rootView.findViewById(R.id.grandsonPhoneNumberListView);
+            ArrayAdapter<String> grandsonViewListDataAdapter = new ArrayAdapter<String>(getActivity(),
+                    R.layout.phone_row, grandsonPhoneList);
+            grandsonViewList.setAdapter(grandsonViewListDataAdapter);
+            
+            // Populate son view list
+            List<String> sonPhoneList = new ArrayList<String>();
+            sonPhoneList.add("+44 (0) 70235 496192");
+            
+            ListView sonViewList = (ListView) rootView.findViewById(R.id.sonPhoneNumberListView);
+            ArrayAdapter<String> sonViewListDataAdapter = new ArrayAdapter<String>(getActivity(),
+                    R.layout.phone_row, sonPhoneList);
+            sonViewList.setAdapter(sonViewListDataAdapter);
+            
+            // Populate daughter
+            List<String> daughterPhoneList = new ArrayList<String>();
+            daughterPhoneList.add("+44 (0) 70235 496192");
+            daughterPhoneList.add("+44 (0) 20 2010 5986");
+            
+            ListView daughterViewList = (ListView) rootView.findViewById(R.id.daughterPhoneNumberListView);
+            ArrayAdapter<String> daughterViewListDataAdapter = new ArrayAdapter<String>(getActivity(),
+                    R.layout.phone_row, daughterPhoneList);
+            daughterViewList.setAdapter(daughterViewListDataAdapter);
+            
+            
+        
             return rootView;
         }
     }
