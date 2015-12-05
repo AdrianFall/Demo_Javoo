@@ -14,5 +14,94 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-   
+   <ImageView
+        android:id="@+id/medicalCardImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_below="@+id/section_label"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wedding_demo_medical_card" />
+
+    <TextView
+        android:id="@+id/ageLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ageTextView"
+        android:text="Years Old"
+        android:textSize="17dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/medicalCardImageView"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/section_label"
+        android:paddingLeft="15dp"
+        android:text="82"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/bloodTypeLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/medicalCardImageView"
+        android:layout_below="@+id/ageTextView"
+        android:text="Blood Type"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/bloodTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ageTextView"
+        android:layout_alignBottom="@+id/ageTextView"
+        android:layout_alignRight="@+id/medicalCardImageView"
+        android:paddingRight="10dp"
+        android:text="Rh+"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/medicalIdAndFullNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/medicalCardImageView"
+        android:layout_centerHorizontal="true"
+        android:text="Medical Id / Laurence Rosenberg"
+        android:textColor="#FFFFFF"
+        android:textSize="13dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/medicalCardImageView"
+        android:layout_alignTop="@+id/medicalIdAndFullNameTextView"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            
+	    <TextView
+	        android:id="@+id/test1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="Medical Id / Laurence Rosenberg"
+	        android:textColor="#FFFFFF"
+	        android:textSize="13dp" />
+            
+        </LinearLayout>
+    </ScrollView>
+    
 </RelativeLayout>
