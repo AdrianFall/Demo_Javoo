@@ -136,6 +136,7 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:paddingLeft="10dp"
+              android:paddingBottom="5dp"
               android:textSize="10dp"
               android:text="Laurence Middlename Rosenberg"
               android:textColor="#C7203A"
@@ -147,6 +148,219 @@
               android:layout_above="@+id/fullNameTextView"
               android:layout_marginLeft="10dp"
               android:background="#EF233C" />
+          
+          <TextView
+              android:id="@+id/dobLabelTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingTop="5dp"
+              android:text="DOB"
+              android:textColor="#FFFFFF"
+              android:textSize="11dp"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+          
+          <TextView
+              android:id="@+id/dobTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingBottom="10dp"
+              android:textSize="10dp"
+              android:text="24 August 1933"
+              android:textColor="#C7203A"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+          
+          <View
+              android:layout_width="274dp"
+              android:layout_height="1dp"
+              android:layout_above="@+id/dobTextView"
+              android:layout_marginLeft="10dp"
+              android:background="#EF233C" />
+          
+          
+          
+          
+          
+          
+          
+          <TextView
+              android:id="@+id/addressLabelTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingTop="5dp"
+              android:text="Address"
+              android:textColor="#FFFFFF"
+              android:textSize="11dp"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+          
+          <TextView
+              android:id="@+id/addressTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingBottom="10dp"
+              android:textSize="10dp"
+              android:text="2A The Ridgeway, Radlett, WD2 8PC"
+              android:textColor="#C7203A"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+          
+          <View
+              android:layout_width="wrap_content"
+              android:layout_height="1dp"
+              android:layout_above="@+id/addressTextView"
+              android:background="#EF233C" />
+          
+          
+          <TextView
+	        android:id="@+id/MedicalInformationLabelTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:paddingBottom="5dp"
+	        android:paddingTop="5dp"
+	        android:text="Medical Information"
+	        android:textColor="#FFFFFF" />
+          
+          
+           <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_above="@+id/MedicalInformationLabelTextView"
+	        android:layout_alignLeft="@+id/MedicalInformationLabelTextView"
+	        android:background="#EF233C" />
+          
+           
+           <TextView
+              android:id="@+id/medicalConditionsLabelTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:paddingBottom="5dp"
+              android:paddingLeft="10dp"
+              android:paddingTop="5dp"
+              android:text="Medical Condtitions"
+              android:textColor="#FFFFFF"
+              android:textSize="11dp" />
+            
+          
+           
+           <TextView
+              android:id="@+id/medicalConditionsTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingBottom="10dp"
+              android:textSize="10dp"
+              android:text="Integer posuere erat a ante venenatis."
+              android:textColor="#C7203A"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+          
+           <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_above="@+id/medicalConditionsTextView"
+	        android:layout_alignLeft="@+id/medicalConditionsTextView"
+	        android:background="#EF233C" />
+           
+           <TextView
+              android:id="@+id/medicalNotesLabelTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:paddingBottom="5dp"
+              android:paddingLeft="10dp"
+              android:paddingTop="5dp"
+              android:text="Medical Notes"
+              android:textColor="#FFFFFF"
+              android:textSize="11dp" />
+            
+          
+           
+           <TextView
+              android:id="@+id/medicalNotesTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingBottom="10dp"
+              android:textSize="10dp"
+              android:text="Integer posuere erat a ante venenatis dapibus ropfg posuere velit aliquet. Sed posuere consectetur est at lobortis. Sem sonec sed odio dui velit aliquet."
+              android:textColor="#C7203A"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+          
+           <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_above="@+id/medicalNotesTextView"
+	        android:layout_alignLeft="@+id/medicalNotesTextView"
+	        android:background="#EF233C" />
+           
+           
+           
+            <TextView
+              android:id="@+id/alergiesAndReactionsLabelTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:paddingBottom="5dp"
+              android:paddingLeft="10dp"
+              android:paddingTop="5dp"
+              android:text="Alergies And Reactions"
+              android:textColor="#FFFFFF"
+              android:textSize="11dp" />
+            
+          
+           
+           <TextView
+              android:id="@+id/alergiesAndReactionsTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dp"
+              android:paddingBottom="10dp"
+              android:textSize="10dp"
+              android:text="Integer posuere erat a ante venenatis dapibus ropfg posuere velit aliquet. Sed posuere consectetur est at lobortis. Sem sonec sed odio dui velit aliquet."
+              android:textColor="#C7203A"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+          
+           <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_above="@+id/alergiesAndReactionsTextView"
+	        android:layout_alignLeft="@+id/alergiesAndReactionsTextView"
+	        android:background="#EF233C" />
+           
+           <TextView
+	        android:id="@+id/nextOfKinLabelTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:paddingBottom="5dp"
+	        android:paddingTop="5dp"
+	        android:text="Next Of Kin"
+	        android:textColor="#FFFFFF" />
+          
+          
+           <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_above="@+id/nextOfKinLabelTextView"
+	        android:layout_alignLeft="@+id/nextOfKinLabelTextView"
+	        android:background="#EF233C" />
+          
+           
+           
+           
+           
+           
+           
           
            <TextView
               android:id="@+id/fake"
@@ -160,6 +374,10 @@
               android:text="Full Name"
               android:textColor="#FFFFFF"
               android:textSize="11dp" />
+           
+          
+           
+           
           
             
         </LinearLayout>
