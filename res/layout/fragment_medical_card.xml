@@ -14,13 +14,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-   <ImageView
+   <com.example.demo_javoo.helper.CustomImageViewCircularShape
         android:id="@+id/medicalCardImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="140dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_below="@+id/section_label"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/wedding_demo_medical_card" />
+        android:layout_margin="15dp"
+        android:src="@drawable/wedding_demo_medical_card"
+        android:background="@drawable/circle"
+        android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/ageLabelTextView"
