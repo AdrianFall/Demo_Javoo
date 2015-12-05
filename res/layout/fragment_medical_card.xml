@@ -53,6 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/medicalCardImageView"
         android:layout_below="@+id/ageTextView"
+        android:layout_alignParentRight="true"
         android:text="Blood Type"
         android:textColor="#FFFFFF"
         android:textSize="17dp" />
@@ -63,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/ageTextView"
         android:layout_alignBottom="@+id/ageTextView"
-        android:layout_alignRight="@+id/medicalCardImageView"
+        android:layout_alignParentRight="true"
         android:paddingRight="10dp"
         android:text="Rh+"
         android:textColor="#FFFFFF"
@@ -73,7 +74,7 @@
         android:id="@+id/medicalIdAndFullNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/medicalCardImageView"
+        android:layout_above="@+id/scrollView1"
         android:layout_centerHorizontal="true"
         android:text="Medical Id / Laurence Rosenberg"
         android:textColor="#FFFFFF"
@@ -85,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/medicalCardImageView"
+        android:layout_alignRight="@+id/bloodTypeTextView"
         android:layout_below="@+id/medicalCardImageView"
         android:paddingTop="20dp" >
 
